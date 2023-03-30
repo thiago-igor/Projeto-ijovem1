@@ -1,7 +1,7 @@
 .main-bg{
     background-image: url('../img/main-bg.svg') ;
     background-size: cover;
-    background-position: center center; /*Para imagem se ajustar ao tamanho da tela*/
+    background-position: center center; 
     color: var(--white-color);
 }
 
@@ -13,7 +13,7 @@
 .main-content{
     max-width: 120rem;
     margin: 0 auto;
-    padding: 8rem var(--gap) ; /*80 px no topo e 30 px no resto*/
+    padding: 8rem var(--gap) ;
 }
 
 .section{

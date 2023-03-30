@@ -4,16 +4,16 @@
     left: 0;
     right: 0;
     width: 100%;
-    z-index: 1; /*Meu menu fica por cima de tudo*/
-    border-bottom: 0.5rem solid var(--light-gray-color);/*Bordar do menu*/
+    z-index: 1; 
+    border-bottom: 0.5rem solid var(--light-gray-color);
 }
 
 .menu-content{
-    display: flex; /*Alinhamento vertical ou orizontal*/
-    justify-content: space-between; /*Espaçar os itens uniformimente*/
-    align-items: center; /*itens alinhados no eixo y*/
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
     padding-top: 0;
-    padding-bottom: 0; /*Zeramos pois, estamos configurando no .menu ul a*/
+    padding-bottom: 0; 
     
 }
 
@@ -23,7 +23,7 @@
 }
 
 .menu h1 a{
-    color: inherit; /*herdar de seu pai, h1 */
+    color: inherit; 
 }
 
 .menu ul{
@@ -32,25 +32,25 @@
 }
 
 .menu ul a{
-    display: block; /*Caixa de elementos*/
-    padding: 2rem; /*distancia os elementos dentro da caixa*/
+    display: block; 
+    padding: 2rem; 
     font-size: 1.8rem;
     color: var(--primary-color);
-    position: relative; /*Referencia a [ul a]*/
+    position: relative; 
 } 
 
 .menu ul li a::after{
-    content: ''; /* Substitui um elemento por um valor gerado*/
-    position: absolute; /*Referencia ao navegador*/
-    bottom: 1rem; /*fundo do navegador*/
-    left: 50%; /*Esquerda do navegador*/
-    height: 0.2rem; /*Altura de 2px*/
+    content: ''; 
+    position: absolute; 
+    bottom: 1rem; 
+    left: 50%; 
+    height: 0.2rem; 
     width: 0;
     background: var(--secondary-color);
-    transition: all 300ms ease-in-out; /*Efeito quando passar o mouse*/
+    transition: all 300ms ease-in-out;
 }
 
-.menu ul li a:hover::after{ /*Quando passa o mouse em cima*/
+.menu ul li a:hover::after{
     width: 50%;
     left: 25%;
 }
